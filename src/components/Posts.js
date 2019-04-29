@@ -24,13 +24,13 @@ class Posts extends Component {
   render() {
     const postItems = this.props.posts.map(post => (
       <div key={post.id}>
-        <h3>{post.title}</h3>
+        <h2 style={{color:"#61DAFB", textAlign:"center"}}>{post.title}</h2>
         <p>{post.body}</p>
       </div>
     ));
     return (
       <div>
-        <h1>Posts</h1>
+        <h1 style={{textAlign:"center"}}>Posts</h1>
         {postItems}
       </div>
     );
